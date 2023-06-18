@@ -22,6 +22,7 @@
           <a href="./index.html" class="link header-link"
             >Web<span class="link-logo">Studio</span></a
           >
+          <div class="menu-container" id="menu-container"></div>
           <ul class="list nav-list">
             <li class="header-item">
               <a href="./index.html" class="link website">Studio</a>
@@ -30,6 +31,55 @@
               <a href="./portfolio.html" class="link website is-active"
                 >Portfolio</a
               >
+            </li>
+            <li class="header-item">
+              <a href="" class="link website">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address class="address">
+            <ul class="list address-list">
+              <li class="header-item email">
+                <a href="mailto:info@devstudio.com" class="link address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-item tel">
+                <a href="tel:+110001111111" class="link address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <button type="button" class="header-btn-menu js-open-menu">
+          <svg class="header-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile window -->
+      <div class="menu-container js-menu-container is-hidden">
+        <div class="container mobile-menu">
+          <button class="modal-btn js-close-menu" type="button">
+            <svg class="modal-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="nav">
+          <a href="./index.html" class="link header-link"
+            >Web<span class="link-logo">Studio</span></a
+          >
+          <div class="menu-container" id="menu-container"></div>
+          <ul class="list nav-list">
+            <li class="header-item">
+              <a href="./index.html" class="link website is-active">Studio</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="link website">Portfolio</a>
             </li>
             <li class="header-item">
               <a href="" class="link website">Contacts</a>
@@ -86,12 +136,30 @@
             <li class="production-box">
               <a href="#" class="production-link">
                 <div class="production-box-hidden">
-                  <img
-                    src="./images/portfolio/img1.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images./portfolio/mob/img1@x1.webp 1x,
+                        ./images./portfolio/mob/img1@x1.webp 2x
+                      "
+                      type="image/webp"
+                      media="max-width: 767.9px"
+                    />
+                    <source
+                      srcset="
+                        ./images./portfolio/mob/img1@x1.jpg 1x,
+                        ./images./portfolio/mob/img1@x1.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="max-width: 767.9px"
+                    />
+                    <img
+                      src="./images./portfolio/mob/img1@x1.jpg"
+                      alt="Banking App Interface Concept"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                   <p class="production-desc-hidden">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -279,89 +347,90 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
+       <footer class="footer">
+      <div class="container footer-primary-container">
         <div class="footer-container">
-          <a href="./index.html" class="link footer-link"
+          <div class="footer-container-decs">
+            <a href="./index.html" class="link footer-link"
             >Web<span class="link-logo logo">Studio</span></a
           >
           <p class="footer-desc">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="seconfary-container">
-          <p class="footer-desc">Social media</p>
-          <ul class="footer-list">
-            <li class="footer-social-list">
-              <a
-                class="social-links footer-icons"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+          </p></div>
+          <div class="seconfary-container">
+            <p class="footer-desc-social">Social media</p>
+            <ul class="footer-list">
+              <li class="footer-social-list">
+                <a
+                  class="social-links footer-icons"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a
+                  class="social-links footer-icons"
+                  href="https://twitter.com/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a
+                  class="social-links footer-icons"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list">
+                <a
+                  class="social-links footer-icons"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subcribe">
+            <p class="subcribe-text">Subscribe</p>
+            <form name="subcribe-form" autocomplete="on" class="subcribe-form">
+              <label class="subcribe-label" for="email">
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  class="subcribe-email"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="btn subcribe-btn">
+                Subscribe
+                <svg class="subcribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a
-                class="social-links footer-icons"
-                href="https://twitter.com/login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a
-                class="social-links footer-icons"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list">
-              <a
-                class="social-links footer-icons"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subcribe">
-          <p class="subcribe-text">Subscribe</p>
-          <form name="subcribe-form" autocomplete="on" class="subcribe-form">
-            <label class="subcribe-label" for="email">
-              <input
-                name="email"
-                type="email"
-                id="email"
-                class="subcribe-email"
-                placeholder="E-mail"
-            /></label>
-            <button type="submit" class="btn subcribe-btn">
-              Subscribe
-              <svg class="subcribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+              </button>
+            </form>
+          </div>
+
       </div>
     </footer>
   </body>
