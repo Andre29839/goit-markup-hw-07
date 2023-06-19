@@ -281,7 +281,20 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--main-color-text);
+}
+
+.menu-address-item-tel:focus,
+.menu-address-item-tel:hover,
+.menu-address-item-email:focus,
+.menu-address-item-email:hover {
   color: var(--logo-color);
+}
+
+@media screen and (max-width: 400px) {
+  .menu-address-item-tel {
+    font-size: 28px;
+  }
 }
 
 .menu-address-item-email {
