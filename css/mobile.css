@@ -31,7 +31,7 @@
 }
 
 .header-btn-menu {
-  display: block;
+  display: flex;
   cursor: pointer;
   border: none;
   background-color: transparent;
