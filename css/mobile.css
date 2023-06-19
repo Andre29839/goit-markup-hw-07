@@ -21,8 +21,9 @@
   |============================
 */
 .container {
-  padding: 0 16px;
+  max-width: 428px;
   width: 100%;
+  padding: 0 16px;
 }
 
 .nav-list {
@@ -39,11 +40,6 @@
 
 .address {
   display: none;
-}
-
-.menu-container {
-  position: absolute;
-  width: 100%;
 }
 
 /**
@@ -143,6 +139,7 @@
 */
 
 .customers {
+  max-width: 428px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -163,34 +160,14 @@
 */
 
 .footer {
-  padding: 0;
-}
-
-.footer .container {
-  justify-content: center;
-  flex-direction: column;
-
-  padding: 96px 15px;
+  padding: 96px 0;
 }
 
 .footer-primary-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
+  flex-direction: column;
+  align-items: center;
   gap: 72px;
-}
-
-.footer-container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 72px;
-}
-
-.footer-container-decs {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-link {
@@ -212,7 +189,6 @@
 .seconfary-container {
   display: flex;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .footer-desc-social {
@@ -221,13 +197,9 @@
   margin-right: auto;
 }
 
-.footer-desc {
-  text-align: center;
-  margin-bottom: 72px;
-}
-
 .subcribe {
   margin: 0;
+  width: 100%;
 }
 
 .subcribe-text {
@@ -251,69 +223,95 @@
   margin-right: auto;
 }
 
+/**
+  |============================
+  | Burger menu
+  |============================
+*/
+
 .menu-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--white-color);
   z-index: 100;
-  background-color: var(--modal-bgc);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translate(-50%, -50%);
-  overflow: scroll;
-}
 
-/* .menu-container.is-hidden {
-  opacity: 1;
-  pointer-events: none;
-} */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
 
-.is-open {
-  visibility: visible;
-  opacity: 1;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 408px;
-  min-height: 584px;
-  background-color: var(--modal-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  transform: translateX(100%);
 }
 
-/* .menu-container {
-  display: block;
-  position: relative;
-  overflow: hidden;
-} */
+.menu-container.is-open {
+  transform: translateX(0);
+}
 
-.menu-contaimer-hidden {
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--social-icons);
-  background-color: var(--logo-color);
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  transition: 250ms ease-in-out;
-  padding: 40px 32px;
-  overflow: hidden;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: capitalize;
+  color: var(--secondary-color-text);
+  gap: 40px;
+  margin-bottom: auto;
 }
 
-.menu-container:hover .menu-contaimer-hidden {
-  transform: translateY(0%);
+.is-active-web {
+  color: var(--button);
+}
+
+.menu-address {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+.menu-address-item-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--logo-color);
+}
+
+.menu-address-item-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+
+.menu-social {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 56px;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+
+.portfolio-list-btn {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.production-box {
+  width: 396px;
 }

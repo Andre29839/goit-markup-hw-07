@@ -23,6 +23,7 @@
 
 .container {
   padding: 0 16px;
+  max-width: 768px;
   width: 100%;
 }
 
@@ -131,6 +132,7 @@
 */
 
 .customers {
+  width: 768px;
   padding: 96px 92px;
 }
 
@@ -152,7 +154,6 @@
   flex-direction: row;
   margin-right: 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .logo {
@@ -179,4 +180,18 @@
 
 .subcribe {
   margin: 0;
+}
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+
+.list-productioin {
+  gap: 72px 24px;
+}
+
+.production-box {
+  width: calc((100% - 24px) / 2);
 }
