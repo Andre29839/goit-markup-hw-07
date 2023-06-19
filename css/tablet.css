@@ -96,6 +96,17 @@
   justify-content: center;
 }
 
+.advantages-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+
+.advantages-desc {
+  font-weight: 500;
+}
+
 .advantages-list-item {
   max-width: 356px;
 }
