@@ -293,12 +293,14 @@
 }
 
 .menu-social {
+  max-width: 328px;
+  margin-right: 40px;
   display: flex;
   flex-wrap: nowrap;
-  gap: 56px;
   margin-top: 48px;
   margin-bottom: 40px;
   margin-left: 40px;
+  justify-content: space-between;
 }
 
 /**
