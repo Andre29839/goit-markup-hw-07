@@ -630,7 +630,6 @@ header ul.list:focus {
   background-color: transparent;
   padding: 16px;
   color: var(--white-color);
-  opacity: 0.3;
 }
 
 .subcribe-email::placeholder {
