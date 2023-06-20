@@ -830,6 +830,12 @@ header ul.list:focus {
   padding: 72px 24px 24px 24px;
 }
 
+@media screen and (max-width: 408px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 .modal-btn {
   position: absolute;
   top: 24px;
