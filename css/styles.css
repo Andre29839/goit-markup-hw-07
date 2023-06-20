@@ -830,9 +830,9 @@ header ul.list:focus {
   padding: 72px 24px 24px 24px;
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 428px) {
   .modal {
-    width: 100%;
+    width: calc(100% - 18px);
   }
 }
 

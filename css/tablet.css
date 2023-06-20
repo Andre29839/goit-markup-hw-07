@@ -72,7 +72,7 @@
   (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(var(--hero-bg), var(--hero-bg)),
-      url(../images/webstudio/background/table/office@x2.png);
+      url(../images/webstudio/background/table/office@x2.jpg);
   }
 }
 
